@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+code {
+    background-color: #d2d9f4;
+    font-family: monospace;
+}
+
+.codeblock {
+    border-radius: 2px;
+    display: block;
+    margin: 10px 0;
+    overflow-x: auto;
+    padding: 10px;
+    white-space: pre;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 0 0 15px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 20px 0 10px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 5px;
+    padding: 15px 0 5px;
+}
+
+main {
+    background-color: #E4F1F6;
+    padding: 20px;
+}
+
+main ul {
+    margin: 10px 0;
+    padding-left: 30px;
+}
+
+#navbar {
+    background-color: #67AFCB;
+    height: 25vh;
+    overflow: auto;
+}
+
+#navbar a {
+    align-items: center;
+    color: black;
+    display: flex;
+    height: 100%;
+    overflow: auto;
+    padding: 0 15px;
+    text-decoration: none;
+    width: 100%;
+}
+
+#navbar header {
+    font-size: 1.8rem;
+    margin: 5px 0 10px;
+    text-align: center;
+}
+
+#navbar li {
+    border-top: 1px solid black;
+    height: 50px;
+}
+
+#navbar li:hover {
+    background-color: #347B98;
+}
+
+#navbar li:last-child {
+    border-bottom: 1px solid black;
+}
+
+p {
+    line-height: 1.5rem;
+    padding: 10px 0 5px;
+}
+
+@media only screen and (min-width: 875px) {
+    main {
+        left: 20%;
+        position: relative;
+        width: 80%;
+    }
+    #navbar {
+        border-right: 1px solid black;
+        height: 100%;
+        position: fixed;
+        width: 20%;
+    }
+    #navbar a {
+        line-height: 1.5rem;
+    }
+    #navbar header {
+        padding: 15px 5px;
+    }
+    #navbar li {
+        height: 80px;
+    }
+}
